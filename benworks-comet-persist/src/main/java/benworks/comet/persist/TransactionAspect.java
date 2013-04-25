@@ -16,7 +16,7 @@ public class TransactionAspect {
 
 	// private final Log log = LogFactory.getLog(TransactionAspect.class);
 
-	@Pointcut("execution(* com.xlands.tdgame..*Dao.save*(..)) || execution(* com.xlands.tdgame..*Dao.update*(..)) || execution(* com.xlands.tdgame..*Dao.delete*(..))")
+	@Pointcut("execution(* benworks.tdgame..*Dao.save*(..)) || execution(* benworks.tdgame..*Dao.update*(..)) || execution(* benworks.tdgame..*Dao.delete*(..))")
 	public void transactionPointcut() {
 
 	}

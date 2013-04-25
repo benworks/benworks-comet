@@ -16,7 +16,7 @@ public class ConnectionAspect {
 
 	// private final Log log = LogFactory.getLog(ConnectionAspect.class);
 
-	@Pointcut("execution(* com.xlands.tdgame..*Dao.*(..))")
+	@Pointcut("execution(* benworks.tdgame..*Dao.*(..))")
 	public void connectionPointcut() {
 
 	}
