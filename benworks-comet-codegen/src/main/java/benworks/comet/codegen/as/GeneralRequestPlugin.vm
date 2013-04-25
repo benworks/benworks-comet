@@ -1,0 +1,26 @@
+package ${plugin.getPackage($class)}
+{
+  import flash.net.registerClassAlias;
+
+  public class GeneralRequest
+  {
+    public function GeneralRequest(){
+    	super();
+        registerClass();
+    }
+
+    public var serial:int=0;
+    public var action:String;
+    public var params:Array;
+
+    public function registerClass():void{
+    	registerClassAlias("IhomeRequest", IhomeRequest);
+    }
+    
+    public function addParameter(key:String,value:*):void{
+    	if(params==null)
+    		params=new Array();
+    	params.push(value);
+    }
+  }
+}
